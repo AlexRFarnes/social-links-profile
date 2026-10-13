@@ -1,0 +1,60 @@
+/****************
+    Typography
+****************/
+@font-face {
+  font-family: "Inter";
+  font-weight: 400 700;
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
+/****************
+    Variables
+****************/
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-green: hsl(75, 94%, 57%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  /* Fonts */
+  --font-family: "Inter", sans-serif;
+  --fs-24: calc(24 / 16 * 1rem);
+  --fs-14: calc(24 / 16 * 1rem);
+
+  /* Spacing */
+  --s-500: 40px;
+  --s-300: 24px;
+  --s-200: 16px;
+  --s-150: 12px;
+  --s-100: 8px;
+  --s-50: 4px;
+}
+
+/****************
+    Reset
+****************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+/**********************
+ * Attribution
+ **********************/
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
