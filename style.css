@@ -22,8 +22,12 @@
 
   /* Fonts */
   --font-family: "Inter", sans-serif;
+  --fs-regular: 400;
+  --fs-semi-bold: 600;
+  --fs-bold: 700;
+
   --fs-24: calc(24 / 16 * 1rem);
-  --fs-14: calc(24 / 16 * 1rem);
+  --fs-14: calc(14 / 16 * 1rem);
 
   /* Spacing */
   --s-500: 40px;
@@ -46,6 +50,30 @@ img {
   max-inline-size: 100%;
   display: block;
 }
+
+/**********************
+ * Base Styles
+ **********************/
+body {
+  font-family: var(--font-family);
+  color: var(--color-white);
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-size: var(--fs-14);
+
+  padding-inline: var(--s-300);
+  min-block-size: 100vh;
+  background-color: var(--color-grey-900);
+
+  /* Grid */
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+}
+
+/**********************
+ * Components
+ **********************/
 
 /**********************
  * Attribution
