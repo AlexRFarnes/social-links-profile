@@ -74,6 +74,70 @@ body {
 /**********************
  * Components
  **********************/
+.card {
+  background-color: var(--color-grey-800);
+  text-align: center;
+  border-radius: 16px;
+  padding: var(--s-300);
+  inline-size: clamp(272px, 100%, 384px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-300);
+
+  @media (width >= 376px) {
+    padding: var(--s-500);
+  }
+}
+
+.card__image {
+  inline-size: 88px;
+  border-radius: 50%;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-50);
+}
+
+.card__title {
+  font-size: var(--fs-24);
+  font-weight: var(--fs-semi-bold);
+}
+
+.card__subtitle {
+  font-weight: var(--fs-bold);
+  color: var(--color-green);
+}
+
+.card__social-links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-200);
+  inline-size: 100%;
+}
+
+.card__social-links-link {
+  background-color: var(--color-grey-700);
+  border-radius: 8px;
+  color: inherit;
+  font-weight: var(--fs-bold);
+  text-decoration: none;
+  display: block;
+  padding-block: var(--s-150);
+}
+
+.card__social-links-link:hover,
+.card__social-links-link:focus-visible {
+  color: var(--color-grey-700);
+  background-color: var(--color-green);
+}
 
 /**********************
  * Attribution
