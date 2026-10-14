@@ -113,6 +113,10 @@ body {
   color: var(--color-green);
 }
 
+.card__social-links {
+  inline-size: 100%;
+}
+
 .card__social-links-list {
   margin: 0;
   padding: 0;
