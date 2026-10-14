@@ -22,9 +22,9 @@
 
   /* Fonts */
   --font-family: "Inter", sans-serif;
-  --fs-regular: 400;
-  --fs-semi-bold: 600;
-  --fs-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
 
   --fs-24: calc(24 / 16 * 1rem);
   --fs-14: calc(14 / 16 * 1rem);
@@ -79,7 +79,7 @@ body {
   text-align: center;
   border-radius: 16px;
   padding: var(--s-300);
-  inline-size: clamp(272px, 100%, 384px);
+  inline-size: min(100%, 384px);
 
   display: flex;
   flex-direction: column;
@@ -105,11 +105,11 @@ body {
 
 .card__title {
   font-size: var(--fs-24);
-  font-weight: var(--fs-semi-bold);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .card__subtitle {
-  font-weight: var(--fs-bold);
+  font-weight: var(--font-weight-bold);
   color: var(--color-green);
 }
 
@@ -127,7 +127,7 @@ body {
   background-color: var(--color-grey-700);
   border-radius: 8px;
   color: inherit;
-  font-weight: var(--fs-bold);
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
   display: block;
   padding-block: var(--s-150);
